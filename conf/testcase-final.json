@@ -1,0 +1,41 @@
+{
+  "connection": [
+    {
+      "name": "airport#2.4",
+      "interface": ["ovs-tb1.eth0", "ovs-tb1.eth0"],
+      "method": {
+        "type": "wire"
+      }
+    },
+    {
+      "name": "airport#5",
+      "interface": ["ovs-tb1.eth1", "ovs-tb1.eth1"],
+      "method": {
+        "type": "wire"
+      }
+    },
+    {
+      "name": "wireless#2.4",
+      "interface": ["ovs-tb1.wlan0", "ovs-tb1.wlan0"],
+      "method": {
+        "type": "wireless",
+        "ssid": "ovs-test1",
+        "channel": 6
+      }
+    },
+    {
+      "name": "airport#5",
+      "interface": ["ovs-tb1.wlan1", "ovs-tb1.wlan1"],
+      "method": {
+        "type": "wireless",
+        "ssid": "ovs-test2",
+        "channel": 36
+      }
+    }
+  ],
+  "iperf": {
+    "server": "ovs-tb1",
+    "client": "ovs-tb2",
+    "bandwidth": 1000
+  }
+}

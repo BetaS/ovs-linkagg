@@ -1,0 +1,23 @@
+{
+  "connection": [
+    {
+      "name": "ether0",
+      "interface": ["ovs-tb1.eth0", "ovs-tb1.eth0"],
+      "method": {
+        "type": "wire"
+      }
+    },
+    {
+      "name": "ether1",
+      "interface": ["ovs-tb1.eth1", "ovs-tb1.eth1"],
+      "method": {
+        "type": "wire"
+      }
+    }
+  ],
+  "iperf": {
+    "server": "ovs-tb1",
+    "client": "ovs-tb2",
+    "bandwidth": 2000
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "connections": [
+    {
+      "name": "ether0",
+      "interface": ["ovs-tb1.eth3", "ovs-tb2.eth3"],
+      "bindings": {
+        "tcp": [40000]
+      }
+    }, {
+      "name": "ether1",
+      "interface": ["ovs-tb1.eth4", "ovs-tb2.eth4"],
+      "bindings": {
+        "tcp": [40001]
+      }
+    }, {
+      "name": "ether2",
+      "interface": ["ovs-tb1.eth5", "ovs-tb2.eth5"],
+      "bindings": {
+        "tcp": [40002]
+      }
+    }, {
+      "name": "ether3",
+      "interface": ["ovs-tb1.eth6", "ovs-tb2.eth6"],
+      "bindings": {
+        "tcp": [40003]
+      }
+    }
+  ],
+  "default_link": "ether3"
+}

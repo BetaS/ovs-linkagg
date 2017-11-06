@@ -1,0 +1,24 @@
+{
+  "ovs-tb1": {
+    "admin": {
+      "ip": "172.31.2.1",
+      "port": 6640,
+      "id": "ows-tb1",
+      "pw": "mclab1"
+    },
+    "addr": "10.0.0.1",
+    "bridge": "br0",
+    "interfaces": ["eth3", "eth4", "eth5", "eth6"]
+  },
+  "ovs-tb2": {
+    "admin": {
+      "ip": "172.31.2.2",
+      "port": 6640,
+      "id": "ows-tb2",
+      "pw": "mclab1"
+    },
+    "addr": "10.0.0.2",
+    "bridge": "br0",
+    "interfaces": ["eth3", "eth4", "eth5", "eth6"]
+  }
+}
