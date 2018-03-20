@@ -52,6 +52,7 @@ def main():
         for iface in ifaces:
             bridge = node_conn[iface["node"]]["bridge"]
 
+
             ports = bridge.list_port()
             iface_port = ports[iface["iface"]]["port"]
 

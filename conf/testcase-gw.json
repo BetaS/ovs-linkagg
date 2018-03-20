@@ -1,0 +1,18 @@
+{
+  "connections": [
+    {
+      "name": "wlan0",
+      "interface": ["ovs-tb1.wlan0", "ovs-tb2.wlan0"],
+      "bindings": {
+        "tcp": [40000]
+      }
+    }, {
+      "name": "wlan1",
+      "interface": ["ovs-tb1.wlan1", "ovs-tb2.wlan1"],
+      "bindings": {
+        "tcp": [40001]
+      }
+    }
+  ],
+  "default_link": "wlan1"
+}

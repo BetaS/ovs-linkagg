@@ -1,0 +1,25 @@
+{
+  "ovs-tb1": {
+    "admin": {
+      "ip": "163.180.118.45",
+      "port": 6640,
+      "id": "ows-tb1",
+      "pw": "mclab1"
+    },
+    "addr": "192.168.222.101",
+    "bridge": "br1",
+    "interfaces": ["wlan0", "wlan1"]
+  },
+  "ovs-tb2": {
+    "admin": {
+      "ip": "163.180.118.60",
+      "port": 6640,
+      "id": "ows-tb1",
+      "pw": "mclab1"
+    },
+    "addr": "192.168.222.202",
+    "bridge": "br1",
+    "interfaces": ["wlan0", "wlan1"]
+}
+
+}
